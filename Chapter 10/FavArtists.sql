@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Apr 02, 2025 at 08:55 PM
+-- Generation Time: Apr 03, 2025 at 08:54 PM
 -- Server version: 8.0.40
 -- PHP Version: 8.3.14
 
@@ -129,6 +129,17 @@ CREATE TABLE `User` (
   `Email` char(70) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Dumping data for table `User`
+--
+
+INSERT INTO `User` (`UserID`, `Name`, `Email`) VALUES
+(1, 'Hannah Thacker', 'hannahmthacker@gmail.com'),
+(2, 'Jason Crey', 'Jcrey@gmail.com'),
+(3, 'Katie Prohaska', 'KP@gmail.com'),
+(4, 'Lindsey Todem', 'todem@gmail.com'),
+(5, 'Kyle Brown', 'brown123@gmail.com');
+
 -- --------------------------------------------------------
 
 --
@@ -141,6 +152,20 @@ CREATE TABLE `User Fav Artists` (
   `Artists` char(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Dumping data for table `User Fav Artists`
+--
+
+INSERT INTO `User Fav Artists` (`UserID`, `Genre Key`, `Artists`) VALUES
+(1, 5, 'Fall Out Boy'),
+(1, 7, 'The Chicks'),
+(2, 4, 'Travis Scott'),
+(2, 6, 'Insane Clown Posse'),
+(3, 5, 'My Chemical Romance'),
+(4, 1, 'David Bowe'),
+(4, 5, 'Green Day'),
+(5, 1, 'Taylor Swift');
+
 -- --------------------------------------------------------
 
 --
@@ -152,6 +177,17 @@ CREATE TABLE `User_Feedback` (
   `UserID` int NOT NULL,
   `Feedback` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `User_Feedback`
+--
+
+INSERT INTO `User_Feedback` (`ID`, `UserID`, `Feedback`) VALUES
+(1, 3, 'I love everything about this website!'),
+(2, 1, 'YOU SUCK!!!'),
+(3, 5, 'I wish there were more genres to choose from.'),
+(4, 1, 'JK your website doesn\'t suck.'),
+(5, 2, 'There should be way more artist examples for each fusion genre.');
 
 --
 -- Indexes for dumped tables
@@ -236,13 +272,13 @@ ALTER TABLE `Pop Rock`
 -- AUTO_INCREMENT for table `User`
 --
 ALTER TABLE `User`
-  MODIFY `UserID` int NOT NULL AUTO_INCREMENT;
+  MODIFY `UserID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `User_Feedback`
 --
 ALTER TABLE `User_Feedback`
-  MODIFY `ID` int NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables
