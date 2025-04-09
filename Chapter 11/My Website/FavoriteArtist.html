@@ -1,0 +1,44 @@
+<DOCTYPE html>
+<html>
+<head>
+<!--
+    Author: Hannah Thacker
+    Date: 02/21/2025
+
+    Filename: FavoriteArtist.html
+   -->
+    <title>Top Artists</title>
+    <meta charset="utf-8" />
+    <link href="TArtists.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Top Artists</h1>
+        <ul>
+            <li><a href="FavoriteArtist.html">Home</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+        </ul>
+    </header>
+    <article>
+        <h1>Fusion Artists</h1>
+        <p>Pick your two favorite genres and see the top Artists in the new genre.</p>
+    </article>
+    <form action="Artists.php" method="post">
+        <select name="genre1">
+            <option value="Pop">Pop</option>
+            <option value="Rock">Rock</option>
+            <option value="Punk">Punk</option>
+            <option value="Hip-hop">Hip-hop</option>
+            <option value="Country">Country</option>
+        </select>
+        <select name="genre2">
+            <option value="Pop">Pop</option>
+            <option value="Rock">Rock</option>
+            <option value="Punk">Punk</option>
+            <option value="Hip-hop">Hip-hop</option>
+            <option value="Country">Country</option>
+        </select>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

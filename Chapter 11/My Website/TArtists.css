@@ -1,0 +1,60 @@
+@charset "utf-8";
+/*
+    Author: Hannah Thacker
+    Date: 02/21/2025
+
+    filename: TArtists.css
+*/
+
+html {
+    background-color: azure;
+}
+
+body{
+    margin: 5% 25% 0% 25%;
+   padding: 0px
+}
+
+form > label{
+    font-size: 1.23em; 
+}
+
+p {
+    line-height: 25px;
+}
+
+/* Navbar Styles*/
+ul {
+    list-style-type: none;
+    float: right;
+    /*margin: 0px 300px 30px 0px;
+    padding: 0px 300px 30px 0px;*/
+}
+
+a {
+    display: block;
+    padding: 8px;
+    color: black;
+}
+
+a:hover {
+    text-shadow: 2px 2px 2px lightgray;
+
+}
+
+/* Data Tables Styles */
+div {
+    display: flex;
+   flex-wrap: wrap;
+}
+
+table {
+    border: 3px solid black;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+th, td {
+    border: 2px solid gray;
+    padding: 5px;
+}
