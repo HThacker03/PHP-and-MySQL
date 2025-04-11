@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Apr 09, 2025 at 08:44 PM
+-- Generation Time: Apr 11, 2025 at 07:16 PM
 -- Server version: 8.0.40
 -- PHP Version: 8.3.14
 
@@ -51,20 +51,20 @@ INSERT INTO `Genres` (`Genre Key`, `Genre`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Hip-hop Country`
+-- Table structure for table `Hiphop_Country`
 --
 
-CREATE TABLE `Hip-hop Country` (
+CREATE TABLE `Hiphop_Country` (
   `ID` int NOT NULL,
   `Genre Key` int NOT NULL DEFAULT '10',
   `Artists` char(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `Hip-hop Country`
+-- Dumping data for table `Hiphop_Country`
 --
 
-INSERT INTO `Hip-hop Country` (`ID`, `Genre Key`, `Artists`) VALUES
+INSERT INTO `Hiphop_Country` (`ID`, `Genre Key`, `Artists`) VALUES
 (1, 10, 'Jelly Roll'),
 (2, 10, 'Beyonce'),
 (3, 10, 'Lil Nas X'),
@@ -73,20 +73,20 @@ INSERT INTO `Hip-hop Country` (`ID`, `Genre Key`, `Artists`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Pop Country`
+-- Table structure for table `Pop_Country`
 --
 
-CREATE TABLE `Pop Country` (
+CREATE TABLE `Pop_Country` (
   `ID` int NOT NULL,
   `Genre Key` int NOT NULL DEFAULT '4',
   `Artists` char(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `Pop Country`
+-- Dumping data for table `Pop_Country`
 --
 
-INSERT INTO `Pop Country` (`ID`, `Genre Key`, `Artists`) VALUES
+INSERT INTO `Pop_Country` (`ID`, `Genre Key`, `Artists`) VALUES
 (1, 4, 'Taylor Swift'),
 (2, 4, 'Shania Twain'),
 (3, 4, 'Luke Bryan'),
@@ -95,20 +95,20 @@ INSERT INTO `Pop Country` (`ID`, `Genre Key`, `Artists`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Pop Hip-hop`
+-- Table structure for table `Pop_Hiphop`
 --
 
-CREATE TABLE `Pop Hip-hop` (
+CREATE TABLE `Pop_Hiphop` (
   `ID` int NOT NULL,
   `Genre Key` int NOT NULL DEFAULT '3',
   `Artists` char(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `Pop Hip-hop`
+-- Dumping data for table `Pop_Hiphop`
 --
 
-INSERT INTO `Pop Hip-hop` (`ID`, `Genre Key`, `Artists`) VALUES
+INSERT INTO `Pop_Hiphop` (`ID`, `Genre Key`, `Artists`) VALUES
 (1, 3, 'Nicki Minaj'),
 (2, 3, 'will.i.am'),
 (3, 3, 'Macklemore'),
@@ -118,20 +118,20 @@ INSERT INTO `Pop Hip-hop` (`ID`, `Genre Key`, `Artists`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Pop Punk`
+-- Table structure for table `Pop_Punk`
 --
 
-CREATE TABLE `Pop Punk` (
+CREATE TABLE `Pop_Punk` (
   `ID` int NOT NULL,
   `Genre Key` int NOT NULL DEFAULT '2',
   `Artists` char(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `Pop Punk`
+-- Dumping data for table `Pop_Punk`
 --
 
-INSERT INTO `Pop Punk` (`ID`, `Genre Key`, `Artists`) VALUES
+INSERT INTO `Pop_Punk` (`ID`, `Genre Key`, `Artists`) VALUES
 (1, 2, 'Fall Out Boy'),
 (2, 2, 'All Time Low'),
 (3, 2, 'blink-182'),
@@ -141,20 +141,20 @@ INSERT INTO `Pop Punk` (`ID`, `Genre Key`, `Artists`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Pop Rock`
+-- Table structure for table `Pop_Rock`
 --
 
-CREATE TABLE `Pop Rock` (
+CREATE TABLE `Pop_Rock` (
   `ID` int NOT NULL,
   `Genre Key` int NOT NULL DEFAULT '1',
   `Artists` char(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `Pop Rock`
+-- Dumping data for table `Pop_Rock`
 --
 
-INSERT INTO `Pop Rock` (`ID`, `Genre Key`, `Artists`) VALUES
+INSERT INTO `Pop_Rock` (`ID`, `Genre Key`, `Artists`) VALUES
 (1, 1, 'Fleetwood Mac'),
 (2, 1, 'Elton John'),
 (3, 1, 'The Beatles'),
@@ -164,20 +164,20 @@ INSERT INTO `Pop Rock` (`ID`, `Genre Key`, `Artists`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Punk Country`
+-- Table structure for table `Punk_Country`
 --
 
-CREATE TABLE `Punk Country` (
+CREATE TABLE `Punk_Country` (
   `ID` int NOT NULL,
   `Genre Key` int NOT NULL DEFAULT '7',
   `Artists` char(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `Punk Country`
+-- Dumping data for table `Punk_Country`
 --
 
-INSERT INTO `Punk Country` (`ID`, `Genre Key`, `Artists`) VALUES
+INSERT INTO `Punk_Country` (`ID`, `Genre Key`, `Artists`) VALUES
 (1, 7, 'Social Distortion'),
 (2, 7, 'The Gun Club'),
 (3, 7, 'The Long Ryders'),
@@ -186,20 +186,20 @@ INSERT INTO `Punk Country` (`ID`, `Genre Key`, `Artists`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Punk Hip-hop`
+-- Table structure for table `Punk_Hiphop`
 --
 
-CREATE TABLE `Punk Hip-hop` (
+CREATE TABLE `Punk_Hiphop` (
   `ID` int NOT NULL,
   `Genre Key` int NOT NULL DEFAULT '6',
   `Artists` char(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `Punk Hip-hop`
+-- Dumping data for table `Punk_Hiphop`
 --
 
-INSERT INTO `Punk Hip-hop` (`ID`, `Genre Key`, `Artists`) VALUES
+INSERT INTO `Punk_Hiphop` (`ID`, `Genre Key`, `Artists`) VALUES
 (1, 6, 'Nothing,Nowhere'),
 (2, 6, 'Travis Scott'),
 (3, 6, 'Public Enemy'),
@@ -208,20 +208,20 @@ INSERT INTO `Punk Hip-hop` (`ID`, `Genre Key`, `Artists`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Punk Rock`
+-- Table structure for table `Punk_Rock`
 --
 
-CREATE TABLE `Punk Rock` (
+CREATE TABLE `Punk_Rock` (
   `ID` int NOT NULL,
   `Genre Key` int NOT NULL DEFAULT '5',
   `Artists` char(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `Punk Rock`
+-- Dumping data for table `Punk_Rock`
 --
 
-INSERT INTO `Punk Rock` (`ID`, `Genre Key`, `Artists`) VALUES
+INSERT INTO `Punk_Rock` (`ID`, `Genre Key`, `Artists`) VALUES
 (1, 5, 'Green Day'),
 (2, 5, 'Ramones'),
 (3, 5, 'The Clash'),
@@ -230,20 +230,20 @@ INSERT INTO `Punk Rock` (`ID`, `Genre Key`, `Artists`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Rock Country`
+-- Table structure for table `Rock_Country`
 --
 
-CREATE TABLE `Rock Country` (
+CREATE TABLE `Rock_Country` (
   `ID` int NOT NULL,
   `Genre Key` int NOT NULL DEFAULT '9',
   `Artists` char(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `Rock Country`
+-- Dumping data for table `Rock_Country`
 --
 
-INSERT INTO `Rock Country` (`ID`, `Genre Key`, `Artists`) VALUES
+INSERT INTO `Rock_Country` (`ID`, `Genre Key`, `Artists`) VALUES
 (1, 9, 'Alabama'),
 (2, 9, 'The Chicks'),
 (3, 9, 'Eagles'),
@@ -252,20 +252,20 @@ INSERT INTO `Rock Country` (`ID`, `Genre Key`, `Artists`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Rock Hip-hop`
+-- Table structure for table `Rock_Hiphop`
 --
 
-CREATE TABLE `Rock Hip-hop` (
+CREATE TABLE `Rock_Hiphop` (
   `ID` int NOT NULL,
   `Genre Key` int NOT NULL DEFAULT '8',
   `Artists` char(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `Rock Hip-hop`
+-- Dumping data for table `Rock_Hiphop`
 --
 
-INSERT INTO `Rock Hip-hop` (`ID`, `Genre Key`, `Artists`) VALUES
+INSERT INTO `Rock_Hiphop` (`ID`, `Genre Key`, `Artists`) VALUES
 (1, 8, 'The Beastie Boys'),
 (2, 8, 'Limp Bizkit'),
 (3, 8, 'Gorillaz'),
@@ -297,22 +297,23 @@ INSERT INTO `User` (`UserID`, `Name`, `Email`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `User Fav Artists`
+-- Table structure for table `User_Fav_Artists`
 --
 
-CREATE TABLE `User Fav Artists` (
+CREATE TABLE `User_Fav_Artists` (
   `UserID` int NOT NULL,
   `Genre Key` int NOT NULL,
   `Artists` char(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `User Fav Artists`
+-- Dumping data for table `User_Fav_Artists`
 --
 
-INSERT INTO `User Fav Artists` (`UserID`, `Genre Key`, `Artists`) VALUES
+INSERT INTO `User_Fav_Artists` (`UserID`, `Genre Key`, `Artists`) VALUES
 (1, 5, 'Fall Out Boy'),
 (1, 7, 'The Chicks'),
+(2, 3, 'Orville Peck'),
 (2, 4, 'Travis Scott'),
 (2, 6, 'Insane Clown Posse'),
 (3, 5, 'My Chemical Romance'),
@@ -354,72 +355,72 @@ ALTER TABLE `Genres`
   ADD PRIMARY KEY (`Genre Key`);
 
 --
--- Indexes for table `Hip-hop Country`
+-- Indexes for table `Hiphop_Country`
 --
-ALTER TABLE `Hip-hop Country`
+ALTER TABLE `Hiphop_Country`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `Genre Key` (`Genre Key`);
 
 --
--- Indexes for table `Pop Country`
+-- Indexes for table `Pop_Country`
 --
-ALTER TABLE `Pop Country`
+ALTER TABLE `Pop_Country`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `Genre Key` (`Genre Key`);
 
 --
--- Indexes for table `Pop Hip-hop`
+-- Indexes for table `Pop_Hiphop`
 --
-ALTER TABLE `Pop Hip-hop`
+ALTER TABLE `Pop_Hiphop`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `Genre Key` (`Genre Key`);
 
 --
--- Indexes for table `Pop Punk`
+-- Indexes for table `Pop_Punk`
 --
-ALTER TABLE `Pop Punk`
+ALTER TABLE `Pop_Punk`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `Genre Key` (`Genre Key`);
 
 --
--- Indexes for table `Pop Rock`
+-- Indexes for table `Pop_Rock`
 --
-ALTER TABLE `Pop Rock`
+ALTER TABLE `Pop_Rock`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `Genre Key` (`Genre Key`);
 
 --
--- Indexes for table `Punk Country`
+-- Indexes for table `Punk_Country`
 --
-ALTER TABLE `Punk Country`
+ALTER TABLE `Punk_Country`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `Genre Key` (`Genre Key`);
 
 --
--- Indexes for table `Punk Hip-hop`
+-- Indexes for table `Punk_Hiphop`
 --
-ALTER TABLE `Punk Hip-hop`
+ALTER TABLE `Punk_Hiphop`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `Genre Key` (`Genre Key`);
 
 --
--- Indexes for table `Punk Rock`
+-- Indexes for table `Punk_Rock`
 --
-ALTER TABLE `Punk Rock`
+ALTER TABLE `Punk_Rock`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `Genre Key` (`Genre Key`);
 
 --
--- Indexes for table `Rock Country`
+-- Indexes for table `Rock_Country`
 --
-ALTER TABLE `Rock Country`
+ALTER TABLE `Rock_Country`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `Genre Key` (`Genre Key`);
 
 --
--- Indexes for table `Rock Hip-hop`
+-- Indexes for table `Rock_Hiphop`
 --
-ALTER TABLE `Rock Hip-hop`
+ALTER TABLE `Rock_Hiphop`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `Genre Key` (`Genre Key`);
 
@@ -430,9 +431,9 @@ ALTER TABLE `User`
   ADD PRIMARY KEY (`UserID`);
 
 --
--- Indexes for table `User Fav Artists`
+-- Indexes for table `User_Fav_Artists`
 --
-ALTER TABLE `User Fav Artists`
+ALTER TABLE `User_Fav_Artists`
   ADD PRIMARY KEY (`UserID`,`Genre Key`),
   ADD KEY `Genre Key` (`Genre Key`);
 
@@ -454,63 +455,63 @@ ALTER TABLE `Genres`
   MODIFY `Genre Key` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `Hip-hop Country`
+-- AUTO_INCREMENT for table `Hiphop_Country`
 --
-ALTER TABLE `Hip-hop Country`
+ALTER TABLE `Hiphop_Country`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `Pop Country`
+-- AUTO_INCREMENT for table `Pop_Country`
 --
-ALTER TABLE `Pop Country`
+ALTER TABLE `Pop_Country`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `Pop Hip-hop`
+-- AUTO_INCREMENT for table `Pop_Hiphop`
 --
-ALTER TABLE `Pop Hip-hop`
+ALTER TABLE `Pop_Hiphop`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `Pop Punk`
+-- AUTO_INCREMENT for table `Pop_Punk`
 --
-ALTER TABLE `Pop Punk`
+ALTER TABLE `Pop_Punk`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `Pop Rock`
+-- AUTO_INCREMENT for table `Pop_Rock`
 --
-ALTER TABLE `Pop Rock`
+ALTER TABLE `Pop_Rock`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `Punk Country`
+-- AUTO_INCREMENT for table `Punk_Country`
 --
-ALTER TABLE `Punk Country`
+ALTER TABLE `Punk_Country`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `Punk Hip-hop`
+-- AUTO_INCREMENT for table `Punk_Hiphop`
 --
-ALTER TABLE `Punk Hip-hop`
+ALTER TABLE `Punk_Hiphop`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `Punk Rock`
+-- AUTO_INCREMENT for table `Punk_Rock`
 --
-ALTER TABLE `Punk Rock`
+ALTER TABLE `Punk_Rock`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `Rock Country`
+-- AUTO_INCREMENT for table `Rock_Country`
 --
-ALTER TABLE `Rock Country`
+ALTER TABLE `Rock_Country`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `Rock Hip-hop`
+-- AUTO_INCREMENT for table `Rock_Hiphop`
 --
-ALTER TABLE `Rock Hip-hop`
+ALTER TABLE `Rock_Hiphop`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
@@ -530,71 +531,71 @@ ALTER TABLE `User_Feedback`
 --
 
 --
--- Constraints for table `Hip-hop Country`
+-- Constraints for table `Hiphop_Country`
 --
-ALTER TABLE `Hip-hop Country`
-  ADD CONSTRAINT `hip-hop country_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE `Hiphop_Country`
+  ADD CONSTRAINT `hiphop_country_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
--- Constraints for table `Pop Country`
+-- Constraints for table `Pop_Country`
 --
-ALTER TABLE `Pop Country`
-  ADD CONSTRAINT `pop country_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE `Pop_Country`
+  ADD CONSTRAINT `pop_country_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
--- Constraints for table `Pop Hip-hop`
+-- Constraints for table `Pop_Hiphop`
 --
-ALTER TABLE `Pop Hip-hop`
-  ADD CONSTRAINT `pop hip-hop_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE `Pop_Hiphop`
+  ADD CONSTRAINT `pop_hiphop_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
--- Constraints for table `Pop Punk`
+-- Constraints for table `Pop_Punk`
 --
-ALTER TABLE `Pop Punk`
-  ADD CONSTRAINT `pop punk_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE `Pop_Punk`
+  ADD CONSTRAINT `pop_punk_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
--- Constraints for table `Pop Rock`
+-- Constraints for table `Pop_Rock`
 --
-ALTER TABLE `Pop Rock`
-  ADD CONSTRAINT `pop rock_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE `Pop_Rock`
+  ADD CONSTRAINT `pop_rock_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
--- Constraints for table `Punk Country`
+-- Constraints for table `Punk_Country`
 --
-ALTER TABLE `Punk Country`
-  ADD CONSTRAINT `punk country_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE `Punk_Country`
+  ADD CONSTRAINT `punk_country_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
--- Constraints for table `Punk Hip-hop`
+-- Constraints for table `Punk_Hiphop`
 --
-ALTER TABLE `Punk Hip-hop`
-  ADD CONSTRAINT `punk hip-hop_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE `Punk_Hiphop`
+  ADD CONSTRAINT `punk_hiphop_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
--- Constraints for table `Punk Rock`
+-- Constraints for table `Punk_Rock`
 --
-ALTER TABLE `Punk Rock`
-  ADD CONSTRAINT `punk rock_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE `Punk_Rock`
+  ADD CONSTRAINT `punk_rock_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
--- Constraints for table `Rock Country`
+-- Constraints for table `Rock_Country`
 --
-ALTER TABLE `Rock Country`
-  ADD CONSTRAINT `rock country_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE `Rock_Country`
+  ADD CONSTRAINT `rock_country_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
--- Constraints for table `Rock Hip-hop`
+-- Constraints for table `Rock_Hiphop`
 --
-ALTER TABLE `Rock Hip-hop`
-  ADD CONSTRAINT `rock hip-hop_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE `Rock_Hiphop`
+  ADD CONSTRAINT `rock_hiphop_ibfk_1` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
--- Constraints for table `User Fav Artists`
+-- Constraints for table `User_Fav_Artists`
 --
-ALTER TABLE `User Fav Artists`
-  ADD CONSTRAINT `user fav artists_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `User` (`UserID`) ON DELETE RESTRICT ON UPDATE RESTRICT,
-  ADD CONSTRAINT `user fav artists_ibfk_2` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE `User_Fav_Artists`
+  ADD CONSTRAINT `user_fav_artists_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `User` (`UserID`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  ADD CONSTRAINT `user_fav_artists_ibfk_2` FOREIGN KEY (`Genre Key`) REFERENCES `Genres` (`Genre Key`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
 -- Constraints for table `User_Feedback`
